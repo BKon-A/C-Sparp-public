@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace OOP_Lab_11
 {
 	public static class Extensions
@@ -164,9 +163,11 @@ namespace OOP_Lab_11
 
 		static void Main(string[] args)
 		{
-			//Task1();
+            Console.WriteLine("---------------------Task1--------------------");
+            Task1();
 
-			Task2();
+            Console.WriteLine("\n---------------------Task2--------------------");
+            Task2();
 		}
 	}
 }
