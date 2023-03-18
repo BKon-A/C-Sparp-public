@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace OOP_Lab_13
 {
-    internal class MostDuplicatedCode : Music
+    public class MostDuplicatedCode : Music
     {
         private int compositionNumber { get; set; } = 1;
 
@@ -42,6 +45,27 @@ namespace OOP_Lab_13
             composition.PlaybackTime = Convert.ToDouble(Console.ReadLine());
 
             playlist.Playlist.Add(composition);
+        }
+
+        public void SerializeList(List<Music> playlist, string path)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Music>));
+
+            using (var writer = new StreamWriter(path, true))
+            {
+                serializer.Serialize(writer, playlist);
+            }
+        }
+        public List<Music> DeserializeList(string path)
+        {
+
+            XmlSerializer deserializer = new XmlSerializer(typeof(List<Music>));
+
+            var reader = new StreamReader(path);
+
+            var trytemp = deserializer.Deserialize(reader);
+
+            return (List<Music>)trytemp;
         }
     }
 }

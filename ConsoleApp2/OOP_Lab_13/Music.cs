@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 namespace OOP_Lab_13
 {
-    abstract class Music
+    [XmlInclude(typeof(Rap)), XmlInclude(typeof(Metal)), XmlInclude(typeof(Music))]
+    public abstract class Music
     {
         internal string CompositionName { get; set; }
         internal string CompositionAuthor { get; set; }

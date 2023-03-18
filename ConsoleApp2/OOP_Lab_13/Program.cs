@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace OOP_Lab_13
 {
@@ -11,13 +12,13 @@ namespace OOP_Lab_13
             bool cycleCondition = true;
             MelomaniacPlaylist playlist = new MelomaniacPlaylist("Full");
             MostDuplicatedCode duplicates = new MostDuplicatedCode();
-
+            string path = "E:/Others/XMLFile1.xml";
             while (cycleCondition)
             {
                 
                 Console.WriteLine("\nWhat you want to do:\n1. Add musicaly composition to playlist" +
                 "\n2. Delete selected composition\n3. Show compositions in playlist\n4. Compare compositions" +
-                "\n5. Calculate total playback time\n6. Comlete program");
+                "\n5. Calculate total playback time\n6. Write to file\n7. Read from file\n8. Comlete program");
                 caseChoise = Convert.ToInt32(Console.ReadLine());
 
                 switch (caseChoise)
@@ -91,6 +92,16 @@ namespace OOP_Lab_13
                         break;
 
                     case 6:
+
+                        duplicates.SerializeList(playlist.Playlist, path);
+                        break;
+
+                    case 7:
+
+                        duplicates.DeserializeList(path);
+                        break;
+
+                    case 8:
                         Console.WriteLine("\nProgram completed...\n");
                         cycleCondition = false;
                         break;

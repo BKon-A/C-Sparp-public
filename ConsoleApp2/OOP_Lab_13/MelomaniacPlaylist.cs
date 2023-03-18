@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace OOP_Lab_13
 {
-    sealed class MelomaniacPlaylist : Music
+    public class MelomaniacPlaylist : Music
     {
         internal List<Music> Playlist { get; set; }
         internal string PlaylistName { get; set; }
