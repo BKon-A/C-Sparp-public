@@ -12,7 +12,7 @@ namespace OOP_Lab_13
             bool cycleCondition = true;
             MelomaniacPlaylist playlist = new MelomaniacPlaylist("Full");
             MostDuplicatedCode duplicates = new MostDuplicatedCode();
-            string path = "E:/Others/XMLFile1.xml";
+            string path = "XMLFile1.xml";
             while (cycleCondition)
             {
                 

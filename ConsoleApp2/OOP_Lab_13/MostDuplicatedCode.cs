@@ -51,7 +51,7 @@ namespace OOP_Lab_13
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Music>));
 
-            using (var writer = new StreamWriter(path, true))
+            using (var writer = new StreamWriter(path, false))
             {
                 serializer.Serialize(writer, playlist);
             }
