@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_Lab_14
 {
@@ -44,7 +41,7 @@ namespace OOP_Lab_14
                 Console.WriteLine(item);
             }
 
-            //emojis.Sort (x, y) => x._square.CompareTo(y._square); // not worked in C# 7.3
+            //emojis.Sort(x, y) => x._square.CompareTo(y._square); // not worked in C# 7.3
         }
     }
 }
