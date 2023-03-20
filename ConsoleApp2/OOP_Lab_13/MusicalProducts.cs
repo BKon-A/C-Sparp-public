@@ -1,7 +1,4 @@
-﻿using System;
-using System.Xml.Serialization;
-
-namespace OOP_Lab_13
+﻿namespace OOP_Lab_13
 {
     public class Rap : Music
     {
