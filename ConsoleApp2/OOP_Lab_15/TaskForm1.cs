@@ -17,34 +17,21 @@ namespace OOP_Lab_15
             InitializeComponent();
         }
 
-        private void TaskForm1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Exit
         {
             Application.Exit();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // Back
         {
-
+            Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            DoTasks DoTask1 = new DoTasks();
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
+            DoTask1.Task1(textBox3, textBox2, textBox1);
         }
     }
 }

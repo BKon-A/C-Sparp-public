@@ -14,7 +14,7 @@ namespace OOP_Lab_14
             EmojiActions emoji2 = new EmojiActions(2.33, 3.11);
             EmojiActions emoji3 = new EmojiActions(4.62, 3.1);
             EmojiActions emoji4 = new EmojiActions(5.55, 9.6);
-
+            
             emoji.SetRadiusR(4.7);
             emoji.SetRadiusSmallR(2.22);
             emoji.SetSquare(emoji.GetRadiusR(), emoji.GetRadiusSmallR());

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace OOP_Lab_13
 {

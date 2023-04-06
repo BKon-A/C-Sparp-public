@@ -9,13 +9,14 @@ namespace OOP_Lab_15
     internal interface ICube
     {
         double RibLength { get; set; }
-        protected double CubeVolume { get; set; }
-        protected double CubeLateralSurfaceSquare { get; set;}
+        double CubeVolume { get; set; }
+        double CubeLateralSurfaceSquare { get; set;}
     }
-    internal interface ICubeActions
+    internal interface ICubeActions : ICube
     {
-        public double GetRibLength();
-        public double GetCubeVolume();
-        public double GetCubeLateralSurfaceSquare();
+        void SetCubeVolume();
+        void SetCubeLateralSurfaceSquare();
+        void SetCubeVolume(double cubeVolume);
+        void SetCubeLateralSurfaceSquare(double cubeLateralSurfaceSquare);
     }
 }

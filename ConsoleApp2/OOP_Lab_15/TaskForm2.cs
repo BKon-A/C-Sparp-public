@@ -21,5 +21,10 @@ namespace OOP_Lab_15
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
