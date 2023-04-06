@@ -35,9 +35,10 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(209, 180);
             button1.Name = "button1";
-            button1.Size = new Size(100, 40);
+            button1.Size = new Size(162, 90);
             button1.TabIndex = 0;
             button1.Text = "Task1";
             button1.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // button2
             // 
+            button2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(511, 180);
             button2.Name = "button2";
-            button2.Size = new Size(100, 40);
+            button2.Size = new Size(144, 90);
             button2.TabIndex = 1;
             button2.Text = "Task2";
             button2.UseVisualStyleBackColor = true;
@@ -55,6 +57,7 @@
             // 
             // button3
             // 
+            button3.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             button3.Location = new Point(688, 398);
             button3.Name = "button3";
             button3.Size = new Size(100, 40);

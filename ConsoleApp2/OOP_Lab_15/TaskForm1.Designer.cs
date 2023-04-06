@@ -37,10 +37,12 @@
             label3 = new Label();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(688, 398);
             button1.Name = "button1";
             button1.Size = new Size(100, 40);
@@ -59,9 +61,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(102, 275);
             label1.Name = "label1";
-            label1.Size = new Size(96, 20);
+            label1.Size = new Size(111, 23);
             label1.TabIndex = 5;
             label1.Text = "Cube volume";
             // 
@@ -71,7 +74,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 6;
-            
             // 
             // textBox3
             // 
@@ -83,23 +85,26 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(392, 276);
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(372, 275);
             label2.Name = "label2";
-            label2.Size = new Size(188, 20);
+            label2.Size = new Size(217, 23);
             label2.TabIndex = 8;
             label2.Text = "Cube lateral surface square";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(282, 84);
             label3.Name = "label3";
-            label3.Size = new Size(111, 20);
+            label3.Size = new Size(129, 23);
             label3.TabIndex = 9;
             label3.Text = "Enter rib length";
             // 
             // button2
             // 
+            button2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(571, 398);
             button2.Name = "button2";
             button2.Size = new Size(100, 40);
@@ -111,7 +116,7 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(367, 171);
+            button3.Location = new Point(478, 172);
             button3.Name = "button3";
             button3.Size = new Size(121, 52);
             button3.TabIndex = 11;
@@ -119,11 +124,23 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(282, 172);
+            button4.Name = "button4";
+            button4.Size = new Size(121, 52);
+            button4.TabIndex = 12;
+            button4.Text = "Clear";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // TaskForm1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label3);
@@ -150,5 +167,6 @@
         private Label label3;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }

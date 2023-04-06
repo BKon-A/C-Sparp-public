@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace OOP_Lab_15
+﻿namespace OOP_Lab_15
 {
     public partial class TaskForm1 : Form
     {
@@ -32,6 +22,13 @@ namespace OOP_Lab_15
             DoTasks DoTask1 = new DoTasks();
 
             DoTask1.Task1(textBox3, textBox2, textBox1);
+        }
+
+        private void button4_Click(object sender, EventArgs e) // Clear filds
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
         }
     }
 }
