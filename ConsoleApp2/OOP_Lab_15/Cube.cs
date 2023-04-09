@@ -1,6 +1,6 @@
 ﻿namespace OOP_Lab_15
 {
-    abstract class Cube : ICube
+    abstract class Cube
     {
         public double RibLength { get; set; }
         public double CubeVolume { get; set; }
@@ -18,25 +18,8 @@
         }
     }
 
-    internal class CubeActions : Cube, ICubeActions
+    internal class CubeActions : Cube, ICube
     {
-        public void SetCubeVolume()
-        {
-            CubeVolume = Math.Pow(RibLength, 3);
-        }
-        public void SetCubeLateralSurfaceSquare()
-        {
-            CubeLateralSurfaceSquare = Math.Pow(RibLength, 2) * 6;
-        }
-
-        public void SetCubeVolume(double cubeVolume)
-        {
-            CubeVolume = cubeVolume;
-        }
-        public void SetCubeLateralSurfaceSquare(double cubeLateralSurfaceSquare)
-        {
-            CubeLateralSurfaceSquare = cubeLateralSurfaceSquare;
-        }
 
         public CubeActions() : base()
         {

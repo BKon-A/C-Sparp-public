@@ -12,11 +12,11 @@ namespace OOP_Lab_15
         double CubeVolume { get; set; }
         double CubeLateralSurfaceSquare { get; set;}
     }
-    internal interface ICubeActions : ICube
+    internal interface IFile
     {
-        void SetCubeVolume();
-        void SetCubeLateralSurfaceSquare();
-        void SetCubeVolume(double cubeVolume);
-        void SetCubeLateralSurfaceSquare(double cubeLateralSurfaceSquare);
+        string FileName { get; set; }
+
+        void FileRename(string name);
+        void FileWrite(string name);
     }
 }
