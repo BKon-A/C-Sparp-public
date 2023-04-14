@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection.Metadata;
 
 namespace OOP_Lab_15
 {
     internal class DoTasks
     {
+        internal List<string> values = new List<string>();
+
         IFile file = new FileManipulation("TextFile");
         public void Task1(TextBox textBox3, TextBox textBox2, TextBox textBox1)
         {
@@ -19,17 +16,25 @@ namespace OOP_Lab_15
 
         }
 
-        public void Task2_Rename(string name)
+        public void Task2_Rename(string path)
         {
-            file.FileRename(name);
+            file.FileRename(path);
         }
-        public void Task2_Write()
-        {
-
+        public void Task2_Write(string path, List<string> values)
+        {   
+            file.FileWrite(path, values);
         }
-        public void Task2_Read()
+        public string Task2_Read(string path)
         {
-
+            try
+            {
+                return file.FileRead(path);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return string.Empty;
         }
     }
 }

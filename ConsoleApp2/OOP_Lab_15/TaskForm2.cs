@@ -35,7 +35,9 @@ namespace OOP_Lab_15
 
             userName = textBox1.Text + " " + textBox2.Text;
 
-            textBox3.Text = Convert.ToString(userName.Reverse());
+            userName = new string(userName.Reverse().ToArray());
+
+            textBox3.Text = userName;
 
         }
 
@@ -62,12 +64,20 @@ namespace OOP_Lab_15
 
         private void button7_Click(object sender, EventArgs e) // Write to File
         {
+            DoTasks task2 = new DoTasks();
 
+            task2.values.Add(textBox1.Text);
+            task2.values.Add(textBox2.Text);
+
+            task2.Task2_Write(textBox5.Text, task2.values);
         }
 
         private void button6_Click(object sender, EventArgs e) // Read File
         {
+            
+            DoTasks task2 = new DoTasks();
 
+            textBox6.Text = task2.Task2_Read(textBox5.Text);
         }
     }
 }

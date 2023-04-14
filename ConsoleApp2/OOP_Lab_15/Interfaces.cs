@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Lab_15
+﻿namespace OOP_Lab_15
 {
     internal interface ICube
     {
@@ -14,9 +8,10 @@ namespace OOP_Lab_15
     }
     internal interface IFile
     {
-        string FileName { get; set; }
+        string Path { get; set; }
 
-        void FileRename(string name);
-        void FileWrite(string name);
+        void FileRename(string path);
+        void FileWrite(string path, List<string> values);
+        string FileRead(string path);
     }
 }

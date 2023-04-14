@@ -46,11 +46,12 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            textBox6 = new TextBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(688, 398);
+            button1.Location = new Point(680, 524);
             button1.Name = "button1";
             button1.Size = new Size(100, 40);
             button1.TabIndex = 3;
@@ -60,7 +61,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(572, 398);
+            button2.Location = new Point(556, 524);
             button2.Name = "button2";
             button2.Size = new Size(100, 40);
             button2.TabIndex = 4;
@@ -178,7 +179,7 @@
             // button5
             // 
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button5.Location = new Point(502, 232);
+            button5.Location = new Point(537, 180);
             button5.Name = "button5";
             button5.Size = new Size(160, 46);
             button5.TabIndex = 19;
@@ -189,7 +190,7 @@
             // button6
             // 
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button6.Location = new Point(606, 302);
+            button6.Location = new Point(606, 262);
             button6.Name = "button6";
             button6.Size = new Size(182, 46);
             button6.TabIndex = 20;
@@ -200,18 +201,18 @@
             // button7
             // 
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button7.Location = new Point(382, 302);
+            button7.Location = new Point(384, 262);
             button7.Name = "button7";
             button7.Size = new Size(182, 46);
             button7.TabIndex = 21;
-            button7.Text = "Save File Content";
+            button7.Text = "Write To File";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
             // button8
             // 
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button8.Location = new Point(95, 336);
+            button8.Location = new Point(108, 277);
             button8.Name = "button8";
             button8.Size = new Size(160, 46);
             button8.TabIndex = 22;
@@ -219,11 +220,22 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(21, 362);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.ReadOnly = true;
+            textBox6.ScrollBars = ScrollBars.Vertical;
+            textBox6.Size = new Size(759, 150);
+            textBox6.TabIndex = 23;
+            // 
             // TaskForm2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(792, 576);
+            Controls.Add(textBox6);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -242,6 +254,7 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
+            ImeMode = ImeMode.Off;
             Name = "TaskForm2";
             Text = "TaskForm2";
             ResumeLayout(false);
@@ -268,5 +281,6 @@
         private Button button6;
         private Button button7;
         private Button button8;
+        private TextBox textBox6;
     }
 }

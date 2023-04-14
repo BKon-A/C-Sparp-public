@@ -10,42 +10,106 @@ namespace OOP_Lab_15
 {
     internal class FileManipulation : IFile
     {
-        public string FileName { get; set; }
+        public string Path { get; set; }
         public FileManipulation()
         {
-            FileName = "Defout.txt";
+            Path = "Defout.txt";
 
-            File.Create(FileName);
+            File.Create(Path).Close();
         }
-        public FileManipulation(string name)
+        public FileManipulation(string path)
         {
-            if (name.Contains(".txt"))
+            if (path.Contains(".txt"))
             {
-                FileName = name;
+                Path = path;
+                File.Create(Path).Close();
             }
             else
             {
-                FileName = name + ".txt";
+                Path = path + ".txt";
+                File.Create(Path).Close();
             }
-
-            File.Create(FileName);
         }
 
-        void FileWrite()
+        public void FileWrite(string path, List<string> values)
         {
-
-        }
-        void FileRename(string name)
-        {
-            if (!(name.Contains(".txt")))
+            try
             {
-                name = name + ".txt";
-                File.Copy(FileName, name, true);
-            }   
-        }
-        void FileRead(string name)
-        {
+                if (File.Exists(path))
+                {
+                    if (!path.Contains(".txt"))
+                    {
+                        path = path + ".txt";
+                        StreamWriter streamWrite = new StreamWriter(path, true);
+                        foreach(var i in values)
+                        {
+                            streamWrite.Write(" " + i);
+                        }
+                        streamWrite.Close();
+                    }
+                    else
+                    {
+                        StreamWriter streamWrite = new StreamWriter(path, true);
+                        foreach (var i in values)
+                        {
+                            streamWrite.Write(" " + i);
+                        }
+                        streamWrite.Close();
+                    }
 
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void FileRename(string path)
+        {
+            try
+            {
+                if(File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+                if(!path.Contains(".txt"))
+                {
+                    path = path + ".txt";
+                }
+
+                Microsoft.VisualBasic.FileIO.FileSystem.RenameFile(Path, path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public string FileRead(string path)
+        {
+            try
+            {
+                if (File.Exists(path))
+                {
+                    if (!path.Contains(".txt"))
+                    {
+                        path = path + ".txt";
+                        StreamReader streamReader = new StreamReader(path);
+                        return streamReader.ReadToEnd();
+                    }
+                    else
+                    {
+                        StreamReader streamReader = new StreamReader(path);
+
+                        return streamReader.ReadToEnd();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return "";
         }
     }
 }
