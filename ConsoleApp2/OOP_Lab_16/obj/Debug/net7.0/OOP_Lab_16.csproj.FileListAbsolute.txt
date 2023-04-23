@@ -1,0 +1,15 @@
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\bin\Debug\net7.0\OOP_Lab_16.exe
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\bin\Debug\net7.0\OOP_Lab_16.deps.json
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\bin\Debug\net7.0\OOP_Lab_16.runtimeconfig.json
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\bin\Debug\net7.0\OOP_Lab_16.dll
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\bin\Debug\net7.0\OOP_Lab_16.pdb
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.csproj.AssemblyReference.cache
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.AssemblyInfoInputs.cache
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.AssemblyInfo.cs
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.csproj.CoreCompileInputs.cache
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.dll
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\refint\OOP_Lab_16.dll
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.pdb
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\OOP_Lab_16.genruntimeconfig.cache
+E:\C# Projects\GitRepos\C-Sparp-public\ConsoleApp2\OOP_Lab_16\obj\Debug\net7.0\ref\OOP_Lab_16.dll
