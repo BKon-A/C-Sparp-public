@@ -30,20 +30,21 @@ namespace OOP_Lab_17
         {
             HourglassSerialization hourglass;
 
-            if (Action.SelectedIndex == 0 && SerializeType.SelectedIndex == 1)
+            if (SerializeType.SelectedIndex == 0 && Action.SelectedIndex == 1)
             {
                 hourglass = HourglassSerialization.JsonDeserialization(TextBoxFileName.Text);
                 
             }
-            else if (Action.SelectedIndex == 1 && SerializeType.SelectedIndex == 1)
+            else if (SerializeType.SelectedIndex == 1 && Action.SelectedIndex == 1)
             {
                 hourglass = HourglassSerialization.XmlDeserialization(TextBoxFileName.Text) ?? new();
-   
             }
             else
             {
                 return;
             }    
+
+            TextBlockDeserialize.Text = hourglass.ToString();
             TextBoxHeight.Text = hourglass.Height.ToString();
             TextBoxWidth.Text = hourglass.Width.ToString();
         }
