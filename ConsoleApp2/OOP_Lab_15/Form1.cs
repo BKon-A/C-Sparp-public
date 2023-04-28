@@ -11,8 +11,12 @@ namespace OOP_Lab_15
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TaskForm1 taskForm1 = new TaskForm1();
-            taskForm1.Show();
+            //Type formType = Type.GetType("MyNamespace.MyForm");
+            //Form form = (Form)Activator.CreateInstance(formType);
+
+
+            Type typeform = Type.GetType("OOP_Lab_15.Form1");
+            Form form = (Form)Activator.CreateInstance(typeform);
         }
 
         private void button2_Click(object sender, EventArgs e)

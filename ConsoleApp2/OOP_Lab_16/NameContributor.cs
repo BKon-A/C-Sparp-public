@@ -13,7 +13,7 @@ namespace OOP_Lab_16
         public event NameContributorDelegate? NameContribution;
         public void ButtonClickB()
         {
-            while (true)
+            while(true)
             {
                 ConsoleKeyInfo key = Console.ReadKey();
 

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YhKK18a9cWggN5EeY7nxRWsrCs0ixa3UonHtEK6lcB3w4VokKsm4yT3Xm1GsJAlqYpUkk3N+7RzuJEyYnTKDjg==",
+  "success": true,
+  "projectFilePath": "E:\\C# Projects\\GitRepos\\C-Sparp-public\\ConsoleApp2\\OOP_Lab_17\\OOP_Lab_17.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bogda\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

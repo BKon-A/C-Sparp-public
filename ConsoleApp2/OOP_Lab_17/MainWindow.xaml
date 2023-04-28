@@ -1,0 +1,38 @@
+﻿<Window x:Class="OOP_Lab_17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Lab_17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="159*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="SerializeType" HorizontalAlignment="Left" Margin="519,26,0,0" VerticalAlignment="Top" Width="161" Height="30" Grid.Column="2" Text="Method">
+            <Button Content="Json"/>
+            <Button Content="XML"/>
+        </ComboBox>
+        <ComboBox x:Name="Action" HorizontalAlignment="Left" Margin="519,83,0,0" VerticalAlignment="Top" Width="161" Height="30" Grid.Column="2">
+            <Button Content="Serialize"/>
+            <Button Content="Deserialize"/>
+        </ComboBox>
+        <TextBox x:Name="TextBoxWidth" HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="TextBoxHeight" HorizontalAlignment="Left" Margin="10,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <Button Content="Draw" HorizontalAlignment="Left" Margin="40,134,0,0" VerticalAlignment="Top" Click="Button_ClickDrawFigure" Height="30" Width="60" FontSize="18" Grid.Column="2"/>
+        <Canvas x:Name="CanvasDraw" Grid.Column="2" Margin="50,227,155,10" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" />
+        <Label Content="Width" HorizontalAlignment="Left" Margin="58,19,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="54,79,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button Content="Read" HorizontalAlignment="Left" Margin="519,172,0,0" VerticalAlignment="Top" Click="Button_ClickReadFile" Height="30" Width="60" FontSize="18" Grid.Column="2"/>
+        <Border Grid.Column="2" HorizontalAlignment="Left" Margin="180,19,0,0" VerticalAlignment="Top" Height="138" Width="276"
+                BorderBrush="Black" BorderThickness="2">
+            <TextBlock x:Name="TextBlockDeserialize" TextWrapping="Wrap" Text="" Foreground="Black"/>
+        </Border>
+        <Button Content="Write" HorizontalAlignment="Left" Margin="620,172,0,0" VerticalAlignment="Top" Click="Button_ClickWriteToFile" Height="30" Width="60" FontSize="18" Grid.Column="2"/>
+        <TextBox x:Name="TextBoxFileName" Grid.Column="2" HorizontalAlignment="Left" Margin="590,134,0,0" TextWrapping="Wrap" Text="hourglass" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="2" Content="FIleName" HorizontalAlignment="Left" Margin="507,130,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
